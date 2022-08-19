@@ -21,6 +21,8 @@ BR2_TOOLCHAIN_EXTERNAL_GDB_SERVER_COPY=y
 # BR2_TARGET_GENERIC_REMOUNT_ROOTFS_RW is not set
 BR2_SYSTEM_DHCP="eth0"
 BR2_ROOTFS_OVERLAY="board/100ask/dongshanpi-one/rootfs_overlay/"
+BR2_ROOTFS_POST_BUILD_SCRIPT="board/100ask/dongshanpi-one/post-build-spinand.sh"
+BR2_ROOTFS_POST_IMAGE_SCRIPT="board/100ask/dongshanpi-one/build-after.sh"
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_CUSTOM_GIT=y
 BR2_LINUX_KERNEL_CUSTOM_REPO_URL="https://github.com/DongshanPI/Sigmastar-Linux.git"
